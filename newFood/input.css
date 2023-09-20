@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'K2D', sans-serif;
+    text-decoration: none;
+}
+nav {
+    width: 100%;
+    height: 7vw;
+    background: linear-gradient(125deg, #d81b60, #f48fb1);
+}
+
+.nav-container {
+    max-width: 90vw;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.h3{
+    text-align: center;
+}
+.card{
+    text-align: center;
+    margin: 50px;
+    color: #890032;
+    background: #ffb7cf;
+}

@@ -1,0 +1,184 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=K2D:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'K2D', sans-serif;
+    text-decoration: none;
+}
+
+nav {
+    width: 100%;
+    height: 7vw;
+    background: linear-gradient(125deg, #d81b60, #f48fb1);
+}
+
+.nav-container {
+    max-width: 90vw;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h3 {
+
+    color: rgb(165, 33, 33);
+    /* เปลี่ยนสีข้อความเป็นสีส้ม */
+    font-size: 2.5vw;
+    /* เปลี่ยนขนาดข้อความเป็น 24 พิกเซล */
+}
+
+/* .logonav{
+    width: 7vw;
+    object-fit: contain;
+} */
+.nav-search {
+    background: none;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+
+}
+
+.custom-input-search {
+    width: 100%;
+    /* กำหนดความกว้างของ input */
+    padding: 7px;
+    /* กำหนดระยะขอบของ input */
+    font-size: 1vw;
+    /* กำหนดขนาดตัวอักษรใน input */
+    border: 2px solid transparent;
+    /* กำหนดเส้นขอบของ input */
+    border-radius: 5px;
+    /* กำหนดขอบมนแบบเงารอบขอบของ input */
+    outline: none;
+    background: rgb(255, 240, 243);
+    transition: .3s;
+}
+
+.custom-input-search:focus {
+    border: 2px solid rgb(136, 24, 61);
+}
+
+.container {
+    width: 90vw;
+    background: #ffffff;
+    margin: 0 auto;
+    display: flex;
+}
+
+.sidebar {
+    width: 20%;
+    background: rgb(255, 255, 255);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.2vw;
+
+}
+
+.sidebar-items {
+    background: rgb(252, 184, 205);
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid rgb(255, 165, 193);
+    color: rgb(158, 52, 52);
+    transition: .3s;
+}
+
+.sidebar-items:hover {
+    background: #d81b60;
+    color: rgb(255, 255, 255);
+}
+
+.product {
+    width: 80%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.product-items {
+    cursor: pointer;
+    transition: .3s;
+}
+
+.product-items:hover {
+    transform: scale(1.03);
+}
+
+.product-img {
+    width: 100%;
+    height: 17vw;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.modal {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-page {
+    width: 40vw;
+    height: 40vw;
+    overflow: scroll;
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.modaldesc-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.modaldesc-detail {
+
+    margin-left: 20px;
+}
+
+.modaldesc-img {
+    width: 20vw;
+    height: 20vw;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.8vw;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+
+}
+
+.modal-backdrop {
+    display: none;
+}
